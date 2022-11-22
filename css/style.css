@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#grid_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 500px 400px 200px;
+}
+
+header {
+    background-color: #8BCC92;
+    height: 100px;
+}
+
+.main-article {
+    background-color: #5FB393;
+}
+
+.restaurant_info {
+    background-color: #8BCC92;
+}
+
+.future_events {
+    background-color: #3E9890;
+}
+
+footer {
+    background-color: #5FB393;
+}
