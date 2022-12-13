@@ -165,9 +165,6 @@ button:active {
     padding-top: 25px;
 }
 
-h2 {
-    font-size: 2.5rem;
-}
 
 .restaurant-info {
     display: flex;
@@ -176,6 +173,10 @@ h2 {
     align-items: top;
     padding-left: 10px;
     line-height: 1rem;
+}
+
+.restaurant-info-article h2 {
+    font-size: 2.5rem;
 }
 
 .restaurant-info img {
@@ -192,6 +193,10 @@ h2 {
     padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
+}
+
+.future-events h2 {
+    font-size: 2.5rem;
 }
 
 #future-events-grid {
@@ -251,12 +256,12 @@ footer ul {
 }
 
 
-/* Restaurang */
+/* Restaurant */
 
 #restaurant-grid-body-main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100vh 125px;
+    grid-template-rows: 100px 1000px 125px;
     grid-template-areas: 
     "he"
     "ma"
@@ -266,23 +271,92 @@ footer ul {
 #our-menu-article {
     grid-area: ma;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+#our-menu-article h1 {
     font-size: 2.5rem;
 }
 
 #menu-grid-body {
-    width: 100%;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(2, 300px);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
 }
 
 .food-item {
-    background-color: #2a624c;
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.food-item p {
+    margin: 10px 10px 0 10px;
+}
+
+
+/* Find us */
+
+#grid-body-find-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 75% 125px;
+    grid-template-areas: 
+    "he he"
+    "ti ti"
+    "ar ar"
+    "fo fo";
+}
+
+#find-us-title {
+    grid-area: ti;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#find-us-article {
+    grid-area: ar;
+    display: flex;
+    margin: 70px 70px 0 70px;
+}
+
+#find-us-article img {
+    width: 550px;
+    height: 625px;
+    object-fit: cover;
+    margin-right: 80px;
+}
+
+.suggestions {
+    background-color: rgb(240 235 227);
+    width: 100%;
+    height: 95%;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.suggestions h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.suggestions p {
+    margin-bottom: 30px;
 }
