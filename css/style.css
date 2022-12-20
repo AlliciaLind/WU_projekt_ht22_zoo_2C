@@ -150,6 +150,7 @@ button:hover {
     font-size: 1.3rem;
     opacity: 60%;
     margin-top: 30px;
+    cursor: pointer
     
 }
 
@@ -170,7 +171,7 @@ button:active {
     display: flex;
     margin: 20px 40px 30px 40px;
     justify-content: center;
-    align-items: top;
+    align-items: start;
     padding-left: 10px;
     line-height: 1rem;
 }
@@ -253,6 +254,7 @@ footer ul {
     align-items: center;
     margin-right: 60px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 
@@ -279,7 +281,7 @@ footer ul {
 }
 
 #our-menu-article h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 #menu-grid-body {
@@ -326,8 +328,8 @@ footer ul {
     grid-area: ti;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
     margin-top: 20px;
+    font-size: 2rem;
 }
 
 #find-us-article {
